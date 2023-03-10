@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Reservation</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="modal.css" />
     <link
       rel="stylesheet"
@@ -81,10 +81,10 @@
                   name="last"
                 /><br />
 
-                <div class="message-alert">
+                <span class="message-alert">
                   Veuillez entrer 2 caractères ou plus pour le Nom, lettres
                   aphabétiques uniquement.
-                </div>
+                </span>
               </div>
 
               <div class="formData">
@@ -216,19 +216,13 @@
               </div>
 
               <div class="formData" id="Conditions">
-                <input
-                  name="checkbox1"
-                  class="checkbox-input"
-                  type="checkbox"
-                  id="checkbox1"
-                  checked
-                  required
-                />
-                <label class="checkbox2-label" for="checkbox1">
+
+                <input class="checkbox-input" name="checkbox1" type="checkbox" id="checkbox1"  checked />
+                <label class="checkbox2-label" for="checkbox1" required>
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
-                <br />
+                <br>
 
                 <input
                   name="checkbox2"
@@ -246,7 +240,8 @@
                   >Vous devez vérifier que vous acceptez les termes et
                   conditions</span
                 >
-              </div>
+            </div>
+
 
               <input
                 class="btn-submit buton"
@@ -254,6 +249,7 @@
                 value="C'est parti"
               />
             </form>
+            
           </div>
           <div class="formData" id="affMercii">
             <p class="text-Merci"></p>

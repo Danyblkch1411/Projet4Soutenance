@@ -31,7 +31,7 @@ let conditionsSelectaff = document.querySelector("#Conditions  #checkbox1");
 function launchModal() {
   // reeset des message-error
   const keys = Object.keys(InputValidity);
-  for (i = 0; i < keys.length; i++) {
+  for (let i = 0; i < keys.length; i++) {
     showValidated({ index: i, validation: true });
   }
 
@@ -300,12 +300,12 @@ function boolConditions() {
     msgUtilisateur[6].style.display = "inline";
     msgUtilisateur[6].style.display = "none";
     InputValidity.checkConditions = true;
-    checkConditions = 1;
+    // checkConditions = 1;
   } else {
     msgUtilisateur[6].style.display = "inline";
     msgUtilisateur[6].style.display = "block";
     InputValidity.checkConditions = false;
-    checkConditions = 0;
+    // checkConditions = 0;
   }
 }
 

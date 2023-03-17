@@ -122,6 +122,13 @@ img {
     padding-top: 10px;
   }
 
+
+  .topnav a:hover {
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
   .topnav a {
     display: none;
     width: max-content;
@@ -131,6 +138,12 @@ img {
     float: right;
     display: block;
     color: red;
+  }
+
+
+  .topnav a.icon:hover {
+    background-color: transparent;
+ 
   }
 
   .hero-content {
@@ -515,7 +528,7 @@ input {
   color: #fff;
   position: relative;
   text-align: left;
-  min-width: 424px;
+  min-width: 320px;
 }
 
 .hero-content::after {
